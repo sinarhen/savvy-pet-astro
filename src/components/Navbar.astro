@@ -1,0 +1,32 @@
+<!-- 
+display: flex;
+width: 1440px;
+padding: 20px 145px;
+justify-content: space-between;
+align-items: center; -->
+
+---
+
+import {Icon} from 'astro-icon/components';
+import { Button } from '@/components/ui/button';
+---
+<div class="flex bg-black  p-[20px_145px] justify-between items-center ">
+  <Icon name="logo" width="212" height="38.4"/>
+  <div class="flex items-center gap-[39px]">
+    <a class="text-[14px] no-underline font-semibold leading-[14px] text-white" href="#">Customers</a>
+    <a class="text-[14px] no-underline font-semibold leading-[14px] text-white" href="#">Features</a>
+    <a class="text-[14px] no-underline font-semibold leading-[14px] text-white" href="#">Pricing</a>
+    <a class="text-[14px] no-underline font-semibold leading-[14px] text-white" href="#">About</a>
+    <a class="text-[14px] no-underline font-semibold leading-[14px] text-white" href="#">Blog</a>
+    <a class="text-[14px] no-underline font-semibold leading-[14px] text-white" href="#">FAQ</a>
+
+  </div>
+  <div class="flex gap-2">
+    <Button>
+      Subscribe now
+    </Button>
+    <Button variant="outline">
+      Log in
+    </Button>
+  </div>
+</div>
