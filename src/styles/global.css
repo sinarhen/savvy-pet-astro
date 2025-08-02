@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+body, html {
+    margin:0;
+}
+
+
+:root {
+    /* Original colors */
+    --color-blue: #1DD3E0;
+    --color-yellow: #FFE372;
+    --color-red: #FF8785;
+    --color-purple: #BEC5FF;
+    
+    /* Figma design tokens */
+    --white: #FFFFFF;
+    --grey-00: #FAFAFA;
+    --grey-02: #A0AEC0;
+    --grey-04: #717E8F;
+    --grey-05: #5C6775;
+    --grey-text: #A0AEC0;
+    --main-text: #2D3748;
+    --green: #10B981;
+    --blue-01: #16BAC6;
+    --blue-02: #45B1B9;
+    --light-blue: #F6FDFF;
+    --red-01: #F05350;
+    --yellow: #FBBC00;
+    --pink: #ED7094;
+}
