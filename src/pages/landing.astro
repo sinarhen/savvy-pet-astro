@@ -1,54 +1,241 @@
 
 ---
-import { Icon } from 'astro-icon/components';
 import Layout from '../layouts/Layout.astro';
-import { Image } from 'astro:assets';
-import headerBg from '@/images/header-bg.png';
-
+import Hero from '../components/Hero.astro';
+import EverythingInOne from '../components/EverythingInOne.astro';
 ---
 
 <Layout title="Savvy Pet - Pet grooming business the Savvy way">
-	<div class="bg-gradient-to-br absolute -z-20 from-[#15bac6] to-[#0ea5e9]  w-full h-[758px]">
-		<Image class="h-full w-full" alt="Header background icons" src={headerBg}/>
-
-	</div>
-	<main class=" flex  justify-center w-full h-[758px]">
-		
-		<section class="box-border flex mt-[138px] flex-col  items-center  gap-6 p-0 relative">
-			<div class="font-['Mona_Sans',_sans-serif] font-bold leading-[0] relative shrink-0 text-[#ffffff] text-center w-[789px]">
-				<h1 class="leading-none text-[64px] m-0">
-					<span>Pet grooming business the </span>
-					<span class="font-['Mona_Sans',_sans-serif] font-bold  text-[#ffe372]">
-						Savvy
-					</span>
-					<span> way</span>
-				</h1>
+	<Hero />
+	<EverythingInOne />
+	
+	<!-- About Section -->
+	<section class="box-border content-stretch flex flex-col gap-16 items-center justify-start px-[135px] py-[119px] relative size-full">
+		<div class="box-border content-stretch flex flex-col gap-8 items-center justify-start p-0 relative shrink-0 w-full">
+			<div class="box-border content-stretch flex flex-col gap-8 items-center justify-start p-0 relative shrink-0 w-full">
+				<div class="box-border content-stretch flex flex-col gap-4 items-start justify-start p-0 relative shrink-0 w-full">
+					<div class="font-family-mona font-bold leading-[0] not-italic relative shrink-0 text-[#242c39] text-[52px] text-center w-full">
+						<p class="block leading-[62px]">
+							One Account. Every Device. Total Control.
+						</p>
+					</div>
+				</div>
 			</div>
-			<div class="font-['Mona_Sans',_sans-serif] font-normal leading-[0] relative shrink-0 text-[#ffffff] text-[18px] text-center w-[789px]">
-				<p class="leading-[30px] m-0 not-italic ">
-					<span class="font-['Mona_Sans',_sans-serif]">Savvy helps pet groomers manage bookings, payments, and customer relationships effortlessly.  </span>
-					<span class="font-['Mona_Sans',_sans-serif] font-bold">
-						Anywhere, anytime.
-					</span>
-				</p>
-			</div>
-			<div class="box-border content-stretch flex flex-row gap-4 items-center justify-start p-0 relative shrink-0">
-				<button class="bg-[#ffffff] border-none box-border content-stretch flex flex-row gap-3 items-center justify-start px-6 py-3 relative rounded-[31px] shadow-[0px_13px_26px_-8px_rgba(21,186,198,0.42)] shrink-0 hover:shadow-lg transition-shadow">
-					<span class="font-['Mona_Sans',_sans-serif] font-medium leading-[16px] not-italic relative shrink-0 text-[#242c39] text-[16px] text-center text-nowrap">
-						Subscribe Now
-					</span>
-					<div class="relative shrink-0 size-5">
-						<div class="absolute bottom-[-65%] left-[-45%] right-[-45%] top-[-25%]">
-							<Icon class="size-full" name="subscribe-now"/>
+			
+			<!-- Desktop/Mobile Section -->
+			<div class="box-border content-stretch flex flex-col gap-8 items-center justify-start p-0 relative shrink-0 w-[1170px]">
+				<div class="bg-[#ffffff] box-border content-stretch flex flex-row gap-8 items-start justify-start p-[48px] relative rounded-[48px] shadow-[0px_40px_40.7px_-16.588px_rgba(168,187,188,0.19),0px_12px_24.675px_0px_rgba(173,182,183,0.27)] shrink-0 w-full">
+					<div class="box-border content-stretch flex flex-col gap-[15px] items-start justify-center p-0 relative self-stretch shrink-0 w-[424px]">
+						<div class="box-border content-stretch flex flex-col gap-9 items-start justify-start p-0 relative shrink-0 w-full">
+							<div class="box-border content-stretch flex flex-col gap-6 items-start justify-start leading-[0] not-italic p-0 relative shrink-0 text-left w-full">
+								<div class="font-['Mona_Sans',_sans-serif] font-semibold relative shrink-0 text-[#242c39] text-[48px] w-full">
+									<p class="block leading-none">
+										Use Savvy Pet on Laptop, Tablet or Mobile
+									</p>
+								</div>
+								<div class="font-['Mona_Sans',_sans-serif] font-normal leading-[30px] relative shrink-0 text-[#656689] text-[16px] w-full">
+									<p class="block mb-0">Savvy Pet works seamlessly across desktop, tablet, and mobile—so you can manage appointments, </p>
+									<p class="block">
+										check your schedule, and stay in control from anywhere.
+									</p>
+								</div>
+							</div>
 						</div>
 					</div>
-				</button>
-				<button class="box-border content-stretch flex flex-row gap-3 items-center justify-start px-6 py-3 relative rounded-[31px] shrink-0 border border-[#ffffff] bg-transparent border-solid shadow-[0px_13px_26px_-8px_rgba(21,186,198,0.42)] hover:shadow-lg transition-shadow">
-					<span class="font-['Mona_Sans',_sans-serif] font-normal leading-[16px] not-italic relative shrink-0 text-[#ffffff] text-[16px] text-center text-nowrap">
-						Watch a Demo
-					</span>
-				</button>
+					<div class="basis-0 bg-[#ddf0ff] grow h-[460px] min-h-px min-w-px overflow-clip relative rounded-3xl shrink-0">
+						<div class="absolute contents left-[-63px] top-[47px]">
+							<div class="absolute bottom-[16.96%] left-[-10.19%] right-[1.94%] top-[78.56%]">
+								<div class="absolute bottom-[-19.38%] left-[-0.6%] right-[-0.6%] top-[-19.38%]">
+									<img alt="" class="block max-w-none size-full" loading="lazy" src="/8e56288f0fea687b2c65532b3da4236b1a088d76.svg" />
+								</div>
+							</div>
+							<div class="absolute bottom-[18.92%] contents left-[-0.83%] right-[9.56%] top-[10.22%]">
+								<div class="absolute bottom-[21.3%] left-[4.85%] right-[14.89%] top-[10.22%]">
+									<img alt="" class="block max-w-none size-full" src="/46d8c84cb12df67d228501c92517a47aa3e9729a.svg" />
+								</div>
+								<div class="absolute bottom-[21.54%] left-[5.02%] right-[15.21%] top-[10.7%]">
+									<img alt="" class="block max-w-none size-full" src="/26829aa9b17d8d43354e748db9cfdb4e8a83c055.svg" />
+								</div>
+								<div class="absolute bottom-[22.93%] left-[12.75%] right-[23.9%] top-[73.88%]">
+									<img alt="" class="block max-w-none size-full" loading="lazy" src="/ff87c88bb4a4f8c0b79df859e97374d04b0dbd09.svg" />
+								</div>
+								<div class="absolute bottom-[25.83%] left-[5.02%] right-[15.21%] top-[10.93%]">
+									<img alt="" class="block max-w-none size-full" src="/20043e9a59c608738b4c0f6427cdfc166a468a6c.svg" />
+								</div>
+								<div class="absolute bottom-[26.31%] left-[5.18%] right-[15.37%] top-[11.17%]">
+									<img alt="" class="block max-w-none size-full" src="/a43aa5bfd22f4fd560c7470e42319f63346747bc.svg" />
+								</div>
+							</div>
+							<div class="absolute bottom-[29.13%] left-[7.12%] right-[17.48%] top-[13.7%]">
+								<img alt="" class="block max-w-none size-full" height="263" src="/751a0f58319aff7cdabaf465ce4bdf586167d620.png" width="466" />
+							</div>
+							<div class="absolute bg-[#ffffff] h-[15px] left-[51px] top-[66px] w-10"></div>
+							<div class="absolute bg-center bg-cover bg-no-repeat h-2 left-[47px] top-[69px] w-[48.711px]" style="background-image: url('/2f4ab7003481176c7393468292021926035f370e.png')"></div>
+						</div>
+						<div class="absolute bg-center bg-cover bg-no-repeat h-[262px] left-[347px] top-[178px] w-[243px]" style="background-image: url('/f2c8b2fd06b56505c05c6ff1cfe512fb6eaf950e.png')"></div>
+					</div>
+				</div>
 			</div>
-		</section>
-	</main>
+			
+			<!-- Mobile Apps Section -->
+			<div class="box-border content-stretch flex flex-col gap-8 items-center justify-start p-0 relative shrink-0 w-[1170px]">
+				<div class="bg-[#ffffff] box-border content-stretch flex flex-row gap-8 items-start justify-start p-[48px] relative rounded-[48px] shadow-[0px_40px_40.7px_-16.588px_rgba(168,187,188,0.19),0px_12px_24.675px_0px_rgba(173,182,183,0.27)] shrink-0 w-full">
+					<div class="bg-[#e7e7e7] overflow-clip relative rounded-3xl self-stretch shrink-0 w-[543px]">
+						<div class="absolute flex h-[0px] items-center justify-center left-[120px] top-[25px] w-[0px]">
+							<div class="flex-none rotate-[355.651deg]">
+								<div class="bg-[#00000026] bg-[position:0%_0%,_0%_100%] bg-size-[auto,100%_102.89%] blur-[2.5px] filter h-[538.47px] relative rounded-[16.88px] w-[256.01px]" style="background-image: url('/ee3661db65837547cba61db0a47f033288e7bdb1.png')">
+									<div aria-hidden="true" class="absolute border-[#000000] border-[10px] border-solid inset-[-10px] pointer-events-none rounded-[26.88px] shadow-[0px_26.994px_87.281px_-17.996px_rgba(87,124,147,0.25),-10.57px_31.709px_26.769px_0px_rgba(87,124,147,0.4)]"></div>
+								</div>
+							</div>
+						</div>
+						<div class="absolute flex h-[0px] items-center justify-center left-[79px] top-[60px] w-[0px]">
+							<div class="flex-none rotate-[348.808deg]">
+								<div class="bg-[42.97%_40.84%] bg-no-repeat bg-size-[112.53%_111.9%] h-[111.711px] relative rounded-[26px] shadow-[0px_10.176px_18.741px_0px_#15bac6] w-[111.969px]" style="background-image: url('/047b402cab2bc35ecc12f4cc5ce389cad10aa042.png')">
+									<div class="absolute inset-0 pointer-events-none shadow-[0px_0px_4px_0px_inset_rgba(0,0,0,0.1)]"></div>
+								</div>
+							</div>
+						</div>
+						<div class="absolute flex h-[0px] items-center justify-center left-[344px] top-[89px] w-[0px]">
+							<div class="flex-none rotate-[19.369deg]">
+								<div class="bg-[50.27%_46.81%] bg-no-repeat bg-size-[114.12%_112.85%] h-[112.54px] relative rounded-[26px] shadow-[0px_10.176px_18.741px_0px_#15bac6] w-[112.167px]" style="background-image: url('/b8a6e8bb01bb3acb11c2160aa4e53cec118d91e1.png')">
+									<div class="absolute inset-0 pointer-events-none shadow-[0px_0px_4px_0px_inset_rgba(0,0,0,0.1)]"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="basis-0 box-border content-stretch flex flex-col gap-[15px] grow items-start justify-center min-h-px min-w-px p-0 relative self-stretch shrink-0">
+						<div class="box-border content-stretch flex flex-col gap-9 items-start justify-start p-0 relative shrink-0 w-full">
+							<div class="box-border content-stretch flex flex-col gap-6 items-start justify-start p-0 relative shrink-0 w-full">
+								<div class="font-['Mona_Sans',_sans-serif] font-semibold leading-[0] min-w-full not-italic relative shrink-0 text-[#242c39] text-[48px] text-left" style="width: min-content">
+									<p class="block leading-none">
+										Savvy Pet Mobile Apps Are Here!
+									</p>
+								</div>
+								<div class="font-['Mona_Sans',_sans-serif] font-normal leading-[0] min-w-full not-italic relative shrink-0 text-[#656689] text-[16px] text-left" style="width: min-content">
+									<p class="block leading-[30px]">
+										We've built two apps—one for groomers, and one for their customers. Groomers can manage their day-to-day with ease, while customers can book, pay, and stay updated—all from their phone.
+									</p>
+								</div>
+								<div class="box-border content-stretch flex flex-row gap-6 items-center justify-start p-0 relative shrink-0">
+									<div class="h-[56.826px] overflow-clip relative shrink-0 w-[170px]">
+										<div class="absolute contents inset-0">
+											<div class="absolute contents inset-0">
+												<div class="absolute inset-0">
+													<img alt="" class="block max-w-none size-full" loading="lazy" src="/f4e5dd292614d49a5ebe9d67f848360312f13db4.svg" />
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="bg-center bg-cover bg-no-repeat h-[57.185px] shrink-0 w-[193px]" style="background-image: url('/d3ec3c38d6fda2e589d860c57721e7c25ccecbdd.png')"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Features Section -->
+		<div class="bg-[#f1f9ff] box-border content-stretch flex flex-col gap-8 items-center justify-start overflow-clip p-[48px] relative rounded-[48px] shrink-0 w-full">
+			<div class="absolute h-[1355.69px] left-[-498px] top-[130px] w-[2085.43px]">
+				<img alt="" class="block max-w-none size-full" src="/ab7b27cc0c27c6aa58c193896861d74a68869fec.svg" />
+			</div>
+			<div class="box-border content-stretch flex flex-col gap-8 items-center justify-start p-0 relative shrink-0 w-full">
+				<div class="box-border content-stretch flex flex-col gap-4 items-start justify-start p-0 relative shrink-0 w-full">
+					<div class="box-border content-stretch flex flex-col gap-4 items-start justify-start leading-[0] not-italic p-0 relative shrink-0 text-center w-full">
+						<div class="font-['Mona_Sans',_sans-serif] font-bold relative shrink-0 text-[#242c39] text-[36px] w-full">
+							<p class="block leading-none">
+								Built for Groomers, Loved by Businesses
+							</p>
+						</div>
+						<div class="font-['Mona_Sans',_sans-serif] font-normal relative shrink-0 text-[#656689] text-[16px] w-full">
+							<p class="block leading-[30px]">
+								Everything you need to run smoother, grow faster, and love your work more.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="box-border content-stretch flex flex-row gap-8 items-start justify-start p-0 relative shrink-0 w-full">
+				<div class="basis-0 bg-[#ffffff] grow min-h-px min-w-px relative rounded-2xl shrink-0">
+					<div class="box-border content-stretch flex flex-row gap-5 items-start justify-start overflow-clip p-[24px] relative w-full">
+						<div class="bg-[rgba(59,151,229,0.2)] overflow-clip relative rounded-[10.182px] shrink-0 size-7">
+							<div class="absolute flex flex-col justify-center leading-[0] not-italic size-[27.602px] text-[#3b97e5] text-[15.273px] text-center translate-x-[-50%] translate-y-[-50%]" style="top: calc(50% - 0.152px); left: calc(50% - 0.152px)">
+								<span class="block leading-[normal]">❤️</span>
+							</div>
+						</div>
+						<div class="basis-0 font-['Mona_Sans',_sans-serif] font-medium grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#3b97e5] text-[24px] text-left tracking-[0.24px]">
+							<p class="block leading-[normal]">
+								Trusted by Top Grooming Salons
+							</p>
+						</div>
+					</div>
+					<div aria-hidden="true" class="absolute border border-[#ebf6ff] border-solid inset-0 pointer-events-none rounded-2xl"></div>
+				</div>
+				<div class="basis-0 bg-[#ffffff] grow min-h-px min-w-px relative rounded-2xl shrink-0">
+					<div class="box-border content-stretch flex flex-row gap-5 items-start justify-start overflow-clip p-[24px] relative w-full">
+						<div class="bg-[rgba(59,151,229,0.2)] overflow-clip relative rounded-[10.182px] shrink-0 size-7">
+							<div class="absolute flex flex-col justify-center leading-[0] not-italic size-[27.602px] text-[#3b97e5] text-[15.273px] text-center translate-x-[-50%] translate-y-[-50%]" style="top: calc(50% - 0.152px); left: calc(50% - 0.152px)">
+								<span class="block leading-[normal]">👍</span>
+							</div>
+						</div>
+						<div class="basis-0 font-['Mona_Sans',_sans-serif] font-medium grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#3b97e5] text-[24px] text-left tracking-[0.24px]">
+							<p class="block leading-[normal]">
+								Easy to Use, No Tech Skills Required
+							</p>
+						</div>
+					</div>
+					<div aria-hidden="true" class="absolute border border-[#ebf6ff] border-solid inset-0 pointer-events-none rounded-2xl"></div>
+				</div>
+				<div class="basis-0 bg-[#ffffff] grow min-h-px min-w-px relative rounded-2xl shrink-0">
+					<div class="box-border content-stretch flex flex-row gap-5 items-start justify-start overflow-clip p-[24px] relative w-full">
+						<div class="bg-[rgba(59,151,229,0.2)] overflow-clip relative rounded-[10.182px] shrink-0 size-7">
+							<div class="absolute flex flex-col justify-center leading-[0] not-italic size-[27.602px] text-[#3b97e5] text-[15.273px] text-center translate-x-[-50%] translate-y-[-50%]" style="top: calc(50% - 0.152px); left: calc(50% - 0.152px)">
+								<span class="block leading-[normal]">🕒</span>
+							</div>
+						</div>
+						<div class="basis-0 font-['Mona_Sans',_sans-serif] font-medium grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#3b97e5] text-[24px] text-left tracking-[0.24px]">
+							<p class="block leading-[normal]">
+								Customer Support from Real People
+							</p>
+						</div>
+					</div>
+					<div aria-hidden="true" class="absolute border border-[#ebf6ff] border-solid inset-0 pointer-events-none rounded-2xl"></div>
+				</div>
+			</div>
+			<div class="box-border content-stretch flex flex-row gap-8 items-center justify-center p-0 relative shrink-0 w-full">
+				<div class="bg-[#ffffff] relative rounded-2xl shrink-0 w-[336.667px]">
+					<div class="box-border content-stretch flex flex-row gap-5 items-start justify-start overflow-clip p-[24px] relative w-[336.667px]">
+						<div class="bg-[rgba(59,151,229,0.2)] overflow-clip relative rounded-[10.182px] shrink-0 size-7">
+							<div class="absolute flex flex-col justify-center leading-[0] not-italic size-[27.602px] text-[#3b97e5] text-[15.273px] text-center translate-x-[-50%] translate-y-[-50%]" style="top: calc(50% - 0.152px); left: calc(50% - 0.152px)">
+								<span class="block leading-[normal]">📅</span>
+							</div>
+						</div>
+						<div class="basis-0 font-['Mona_Sans',_sans-serif] font-medium grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#3b97e5] text-[24px] text-left tracking-[0.24px]">
+							<p class="block leading-[normal]">
+								Integrations with GCal, PayPal, etc.
+							</p>
+						</div>
+					</div>
+					<div aria-hidden="true" class="absolute border border-[#ebf6ff] border-solid inset-0 pointer-events-none rounded-2xl"></div>
+				</div>
+				<div class="bg-[#ffffff] relative rounded-2xl shrink-0 w-[336.667px]">
+					<div class="box-border content-stretch flex flex-row gap-5 items-start justify-start overflow-clip p-[24px] relative w-[336.667px]">
+						<div class="bg-[rgba(59,151,229,0.2)] overflow-clip relative rounded-[10.182px] shrink-0 size-7">
+							<div class="absolute flex flex-col justify-center leading-[0] not-italic size-[27.602px] text-[#3b97e5] text-[15.273px] text-center translate-x-[-50%] translate-y-[-50%]" style="top: calc(50% - 0.152px); left: calc(50% - 0.152px)">
+								<span class="block leading-[normal]">🏆</span>
+							</div>
+						</div>
+						<div class="basis-0 font-['Mona_Sans',_sans-serif] font-medium grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#3b97e5] text-[24px] text-left tracking-[0.24px]">
+							<p class="block leading-[normal]">
+								Contracts & GDPR Compliance
+							</p>
+						</div>
+					</div>
+					<div aria-hidden="true" class="absolute border border-[#ebf6ff] border-solid inset-0 pointer-events-none rounded-2xl"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
 </Layout>
