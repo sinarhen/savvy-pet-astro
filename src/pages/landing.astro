@@ -1,47 +1,54 @@
 
 ---
+import { Icon } from 'astro-icon/components';
 import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import headerBg from '@/images/header-bg.png';
+
 ---
 
 <Layout title="Savvy Pet - Pet grooming business the Savvy way">
-	<main class="min-h-screen bg-[var(--white)]">
-		<!-- Header -->
-		<header class="bg-[var(--white)] border-b border-[var(--grey-00)]">
-			<nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-				<div class="flex justify-between items-center h-16">
-					<div class="flex items-center">
-						<div class="text-2xl font-bold text-[var(--main-text)]">savvy pet</div>
-					</div>
-					<div class="hidden md:block">
-						<div class="ml-10 flex items-baseline space-x-8">
-							<a href="#" class="text-[var(--grey-04)] hover:text-[var(--main-text)] px-3 py-2 text-sm font-medium">Features</a>
-							<a href="#" class="text-[var(--grey-04)] hover:text-[var(--main-text)] px-3 py-2 text-sm font-medium">Pricing</a>
-							<a href="#" class="text-[var(--grey-04)] hover:text-[var(--main-text)] px-3 py-2 text-sm font-medium">About</a>
-							<a href="#" class="text-[var(--grey-04)] hover:text-[var(--main-text)] px-3 py-2 text-sm font-medium">Contact</a>
-						</div>
-					</div>
-					<div class="flex items-center space-x-4">
-						<button class="text-[var(--grey-04)] hover:text-[var(--main-text)] px-3 py-2 text-sm font-medium">
-							Sign In
-						</button>
-						<button class="bg-[var(--blue-01)] text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-[var(--blue-02)] transition-colors">
-							Get Started
-						</button>
-					</div>
-				</div>
-			</nav>
-		</header>
+	<div class="bg-gradient-to-br absolute -z-20 from-[#15bac6] to-[#0ea5e9]  w-full h-[758px]">
+		<Image class="h-full w-full" alt="Header background icons" src={headerBg}/>
 
-		<!-- Main Content Area - Ready for new design -->
-		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-			<div class="text-center">
-				<h1 class="text-4xl font-bold text-[var(--main-text)] mb-4">
-					Welcome to Savvy Pet
+	</div>
+	<main class=" flex  justify-center w-full h-[758px]">
+		
+		<section class="box-border flex mt-[138px] flex-col  items-center  gap-6 p-0 relative">
+			<div class="font-['Mona_Sans',_sans-serif] font-bold leading-[0] relative shrink-0 text-[#ffffff] text-center w-[789px]">
+				<h1 class="leading-none text-[64px] m-0">
+					<span>Pet grooming business the </span>
+					<span class="font-['Mona_Sans',_sans-serif] font-bold  text-[#ffe372]">
+						Savvy
+					</span>
+					<span> way</span>
 				</h1>
-				<p class="text-lg text-[var(--grey-04)] max-w-2xl mx-auto">
-					Ready to implement the new design from Figma with proper design tokens and Tailwind CSS.
+			</div>
+			<div class="font-['Mona_Sans',_sans-serif] font-normal leading-[0] relative shrink-0 text-[#ffffff] text-[18px] text-center w-[789px]">
+				<p class="leading-[30px] m-0 not-italic ">
+					<span class="font-['Mona_Sans',_sans-serif]">Savvy helps pet groomers manage bookings, payments, and customer relationships effortlessly.  </span>
+					<span class="font-['Mona_Sans',_sans-serif] font-bold">
+						Anywhere, anytime.
+					</span>
 				</p>
 			</div>
-		</div>
+			<div class="box-border content-stretch flex flex-row gap-4 items-center justify-start p-0 relative shrink-0">
+				<button class="bg-[#ffffff] border-none box-border content-stretch flex flex-row gap-3 items-center justify-start px-6 py-3 relative rounded-[31px] shadow-[0px_13px_26px_-8px_rgba(21,186,198,0.42)] shrink-0 hover:shadow-lg transition-shadow">
+					<span class="font-['Mona_Sans',_sans-serif] font-medium leading-[16px] not-italic relative shrink-0 text-[#242c39] text-[16px] text-center text-nowrap">
+						Subscribe Now
+					</span>
+					<div class="relative shrink-0 size-5">
+						<div class="absolute bottom-[-65%] left-[-45%] right-[-45%] top-[-25%]">
+							<Icon class="size-full" name="subscribe-now"/>
+						</div>
+					</div>
+				</button>
+				<button class="box-border content-stretch flex flex-row gap-3 items-center justify-start px-6 py-3 relative rounded-[31px] shrink-0 border border-[#ffffff] bg-transparent border-solid shadow-[0px_13px_26px_-8px_rgba(21,186,198,0.42)] hover:shadow-lg transition-shadow">
+					<span class="font-['Mona_Sans',_sans-serif] font-normal leading-[16px] not-italic relative shrink-0 text-[#ffffff] text-[16px] text-center text-nowrap">
+						Watch a Demo
+					</span>
+				</button>
+			</div>
+		</section>
 	</main>
 </Layout>

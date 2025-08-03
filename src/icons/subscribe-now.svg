@@ -1,0 +1,25 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 18">
+<g id="Ellipse 9" filter="url(#filter0_d_38_301092)">
+<circle cx="19" cy="15" r="10" fill="var(--fill-0, #FACC16)"/>
+</g>
+<g id="CaretRight">
+<g id="Vector">
+</g>
+<path id="Vector_2" d="M18 12.5L20.5 15L18 17.5" stroke="var(--stroke-0, white)" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_38_301092" x="0" y="0" width="38" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="1" operator="erode" in="SourceAlpha" result="effect1_dropShadow_38_301092"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="5"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.980392 0 0 0 0 0.74902 0 0 0 0 0.243137 0 0 0 1 0"/>
+<feBlend mode="multiply" in2="BackgroundImageFix" result="effect1_dropShadow_38_301092"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_38_301092" result="shape"/>
+</filter>
+</defs>
+</svg>
