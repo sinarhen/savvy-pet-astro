@@ -3,6 +3,7 @@
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.astro';
 import EverythingInOne from '../components/EverythingInOne.astro';
+import Card from '../components/Card.astro';
 ---
 
 <Layout title="Savvy Pet - Pet grooming business the Savvy way">
@@ -11,8 +12,6 @@ import EverythingInOne from '../components/EverythingInOne.astro';
 	
 	<!-- About Section -->
 	<section class="box-border content-stretch flex flex-col gap-16 items-center justify-start px-[135px] py-[119px] relative size-full">
-		<div class="box-border content-stretch flex flex-col gap-8 items-center justify-start p-0 relative shrink-0 w-full">
-			<div class="box-border content-stretch flex flex-col gap-8 items-center justify-start p-0 relative shrink-0 w-full">
 				<div class="box-border content-stretch flex flex-col gap-4 items-start justify-start p-0 relative shrink-0 w-full">
 					<div class="font-family-mona font-bold leading-[0] not-italic relative shrink-0 text-[#242c39] text-[52px] text-center w-full">
 						<p class="block leading-[62px]">
@@ -20,11 +19,9 @@ import EverythingInOne from '../components/EverythingInOne.astro';
 						</p>
 					</div>
 				</div>
-			</div>
 			
 			<!-- Desktop/Mobile Section -->
-			<div class="box-border content-stretch flex flex-col gap-8 items-center justify-start p-0 relative shrink-0 w-[1170px]">
-				<div class="bg-[#ffffff] box-border content-stretch flex flex-row gap-8 items-start justify-start p-[48px] relative rounded-[48px] shadow-[0px_40px_40.7px_-16.588px_rgba(168,187,188,0.19),0px_12px_24.675px_0px_rgba(173,182,183,0.27)] shrink-0 w-full">
+				<Card>
 					<div class="box-border content-stretch flex flex-col gap-[15px] items-start justify-center p-0 relative self-stretch shrink-0 w-[424px]">
 						<div class="box-border content-stretch flex flex-col gap-9 items-start justify-start p-0 relative shrink-0 w-full">
 							<div class="box-border content-stretch flex flex-col gap-6 items-start justify-start leading-[0] not-italic p-0 relative shrink-0 text-left w-full">
@@ -74,12 +71,10 @@ import EverythingInOne from '../components/EverythingInOne.astro';
 						</div>
 						<div class="absolute bg-center bg-cover bg-no-repeat h-[262px] left-[347px] top-[178px] w-[243px]" style="background-image: url('/f2c8b2fd06b56505c05c6ff1cfe512fb6eaf950e.png')"></div>
 					</div>
-				</div>
-			</div>
+				</Card>
 			
 			<!-- Mobile Apps Section -->
-			<div class="box-border content-stretch flex flex-col gap-8 items-center justify-start p-0 relative shrink-0 w-[1170px]">
-				<div class="bg-[#ffffff] box-border content-stretch flex flex-row gap-8 items-start justify-start p-[48px] relative rounded-[48px] shadow-[0px_40px_40.7px_-16.588px_rgba(168,187,188,0.19),0px_12px_24.675px_0px_rgba(173,182,183,0.27)] shrink-0 w-full">
+				<Card>
 					<div class="bg-[#e7e7e7] overflow-clip relative rounded-3xl self-stretch shrink-0 w-[543px]">
 						<div class="absolute flex h-[0px] items-center justify-center left-[120px] top-[25px] w-[0px]">
 							<div class="flex-none rotate-[355.651deg]">
@@ -131,9 +126,7 @@ import EverythingInOne from '../components/EverythingInOne.astro';
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-		</div>
+				</Card>
 		
 		<!-- Features Section -->
 		<div class="bg-[#f1f9ff] box-border content-stretch flex flex-col gap-8 items-center justify-start overflow-clip p-[48px] relative rounded-[48px] shrink-0 w-full">

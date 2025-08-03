@@ -10,14 +10,6 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-//           color: #15BAC6;
-
-// text-align: center;
-// font-family: "Mona Sans";
-// font-size: 16px;
-// font-style: normal;
-// font-weight: 700;
-// line-height: 16px; /* 100% */
           "bg-white   text-[#15BAC6] font-bold text-base",
         destructive:
           "bg-destructive text-white shadow-xs hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",

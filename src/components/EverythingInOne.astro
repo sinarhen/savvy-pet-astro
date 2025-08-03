@@ -1,20 +1,9 @@
 ---
-// Everything in One Platform section component
+import Card from "./Card.astro";
 ---
-
-<style>
-  p {
-    margin: 0 !important ;
-    
-  }
-  button{
-    background: transparent;
-    border:none;
-  }
-</style>
-<section class="box-border content-stretch flex flex-col gap-16 items-center justify-start pb-10 pt-[119px] px-[135px] relative size-full">
-  <div class="box-border content-stretch flex flex-col gap-8 items-center justify-start p-0 relative shrink-0">
-    <div class="box-border content-stretch flex flex-col gap-4 items-start justify-start leading-[0] not-italic p-0 relative shrink-0 text-center w-full">
+<section class="flex  box-border content-stretch flex-col gap-16 shrink-0 items-center w-full justify-start pb-10 pt-[119px] px-[135px] relative h-full">
+  <div class=" flex flex-col gap-8 items-center justify-start p-0 relative shrink-0">
+    <div class=" flex flex-col gap-4 items-start justify-start leading-[0] not-italic p-0 relative shrink-0 text-center w-full">
       <div class="font-['Mona_Sans',_sans-serif] font-bold relative shrink-0 text-[#242c39] text-[0px] w-[1200px]">
         <p class="leading-[62px] text-[52px]">
           <span>Everything</span>
@@ -30,12 +19,12 @@
     </div>
   </div>
   
-  <div class="bg-[#ffffff] box-border content-stretch flex flex-row gap-8 h-[500px] items-center justify-start p-0 relative shrink-0 w-full">
+  <div class="flex box-border flex-row gap-8 h-[500px] items-center justify-start p-0 relative w-full">
     <!-- Left Navigation Sidebar -->
-    <div class="bg-[#ffffff] box-border content-stretch flex flex-col gap-6 items-start justify-start px-0 py-4 relative shrink-0 w-[254px]">
+    <div class="bg-[#ffffff]  flex flex-col gap-6 items-start justify-start px-0 py-4 relative shrink-0 w-[254px]">
       <!-- Salon Owners - Active -->
-      <div class="box-border content-stretch flex flex-row gap-2 items-start justify-start p-0 relative shrink-0">
-        <div class="box-border content-stretch flex flex-row gap-3 items-start justify-start p-0 relative shrink-0">
+      <div class=" flex flex-row gap-2 items-start justify-start p-0 relative shrink-0">
+        <div class=" flex flex-row gap-3 items-start justify-start p-0 relative shrink-0">
           <div class="h-[22px] overflow-clip relative shrink-0 w-[21px]">
             <div class="absolute flex flex-col font-['Font_Awesome_6_Free',_sans-serif] justify-center leading-[0] not-italic size-[33.75px] text-[#15bac6] text-[16px] text-center tracking-[-0.96px] translate-x-[-50%] translate-y-[-50%]" style="top: calc(50% - 0.125px); left: calc(50% + 0.375px)">
               <p class="adjustLetterSpacing block leading-[normal]">🏪</p>
@@ -54,8 +43,8 @@
       </div>
       
       <!-- Multi-Groomer Businesses -->
-      <button class="box-border content-stretch cursor-pointer flex flex-row gap-2 items-start justify-start overflow-visible p-0 relative shrink-0">
-        <div class="box-border content-stretch flex flex-row gap-3 items-start justify-start p-0 relative shrink-0">
+      <button class=" cursor-pointer flex flex-row gap-2 items-start justify-start overflow-visible p-0 relative shrink-0">
+        <div class=" flex flex-row gap-3 items-start justify-start p-0 relative shrink-0">
           <div class="h-[22px] overflow-clip relative shrink-0 w-[21px]">
             <div class="absolute flex flex-col font-['Font_Awesome_6_Free',_sans-serif] justify-center leading-[0] not-italic size-[33.75px] text-[#a2cfdd] text-[16px] text-center tracking-[-0.96px] translate-x-[-50%] translate-y-[-50%]" style="top: calc(50% - 0.125px); left: calc(50% + 0.375px)">
               <p class="adjustLetterSpacing block leading-[normal]">👥</p>
@@ -74,8 +63,8 @@
       </div>
       
       <!-- Enterprise -->
-      <button class="box-border content-stretch cursor-pointer flex flex-row gap-2 items-start justify-start overflow-visible p-0 relative shrink-0">
-        <div class="box-border content-stretch flex flex-row gap-3 items-start justify-start p-0 relative shrink-0">
+      <button class=" cursor-pointer flex flex-row gap-2 items-start justify-start overflow-visible p-0 relative shrink-0">
+        <div class=" flex flex-row gap-3 items-start justify-start p-0 relative shrink-0">
           <div class="h-[22px] overflow-clip relative shrink-0 w-[21px]">
             <div class="absolute flex flex-col font-['Font_Awesome_6_Free',_sans-serif] justify-center leading-[0] not-italic size-[33.75px] text-[#a2cfdd] text-[16px] text-center tracking-[-0.96px] translate-x-[-50%] translate-y-[-50%]" style="top: calc(50% - 0.125px); left: calc(50% + 0.375px)">
               <p class="adjustLetterSpacing block leading-[normal]">💼</p>
@@ -94,7 +83,7 @@
       </div>
       
       <!-- Mobile / In-house / Curbside -->
-      <div class="box-border content-stretch flex flex-row gap-3 items-start justify-start p-0 relative shrink-0">
+      <div class=" flex flex-row gap-3 items-start justify-start p-0 relative shrink-0">
         <div class="h-[22px] overflow-clip relative shrink-0 w-[21px]">
           <div class="absolute flex flex-col font-['Font_Awesome_6_Free',_sans-serif] justify-center leading-[0] not-italic size-[33.75px] text-[#a2cfdd] text-[16px] text-center tracking-[-0.96px] translate-x-[-50%] translate-y-[-50%]" style="top: calc(50% - 0.125px); left: calc(50% + 0.375px)">
             <p class="adjustLetterSpacing block leading-[normal]">🚚</p>
@@ -112,7 +101,7 @@
       </div>
       
       <!-- Home / Solo Groomers -->
-      <button class="box-border content-stretch cursor-pointer flex flex-row gap-3 items-start justify-start overflow-visible p-0 relative shrink-0">
+      <button class=" cursor-pointer flex flex-row gap-3 items-start justify-start overflow-visible p-0 relative shrink-0">
         <div class="h-[22px] overflow-clip relative shrink-0 w-[21px]">
           <div class="absolute flex flex-col font-['Font_Awesome_6_Free',_sans-serif] justify-center leading-[0] not-italic size-[33.75px] text-[#a2cfdd] text-[16px] text-center tracking-[-0.96px] translate-x-[-50%] translate-y-[-50%]" style="top: calc(50% - 0.125px); left: calc(50% + 0.375px)">
             <p class="adjustLetterSpacing block leading-[normal]">🏠</p>
@@ -130,7 +119,7 @@
       </div>
       
       <!-- Student / New Groomers -->
-      <button class="box-border content-stretch cursor-pointer flex flex-row gap-3 items-start justify-start overflow-visible p-0 relative shrink-0">
+      <button class=" cursor-pointer flex flex-row gap-3 items-start justify-start overflow-visible p-0 relative shrink-0">
         <div class="h-[22px] overflow-clip relative shrink-0 w-[21px]">
           <div class="absolute flex flex-col font-['Font_Awesome_6_Free',_sans-serif] justify-center leading-[0] not-italic size-[33.75px] text-[#a2cfdd] text-[16px] text-center tracking-[-0.96px] translate-x-[-50%] translate-y-[-50%]" style="top: calc(50% - 0.125px); left: calc(50% + 0.375px)">
             <p class="adjustLetterSpacing block leading-[normal]">👤</p>
@@ -143,17 +132,15 @@
     </div>
     
     <!-- Main Content Area -->
-    <div class="basis-0 bg-[#ffffff] box-border content-stretch flex flex-row gap-16 grow h-[500px] items-center justify-start min-h-px min-w-px p-[30px] relative rounded-3xl shadow-[0px_40px_40.7px_-16.588px_rgba(168,187,188,0.19),0px_12px_24.675px_0px_rgba(173,182,183,0.27)] shrink-0">
-      <div class="basis-0 grid-cols-[max-content] grid-rows-[max-content] grow h-full inline-grid leading-[0] min-h-px min-w-px place-items-start relative shrink-0">
-        <div class="[grid-area:1_/_1] box-border content-stretch flex flex-col gap-[15px] h-[440px] items-start justify-start ml-0 mt-0 p-0 relative w-[824px]">
-          <div class="box-border content-stretch flex flex-col gap-9 items-start justify-start p-0 relative shrink-0 w-full">
-            <div class="box-border content-stretch flex flex-col gap-[30px] items-start justify-start p-0 relative shrink-0 w-full">
-              <div class="box-border content-stretch flex flex-row gap-9 items-start justify-start p-0 relative shrink-0 w-full">
+    <Card class="p-[30px] rounded-[24px]">
+        <div class="grid-cols-2 flex flex-col gap-[15px] size-full items-start justify-start ml-0 mt-0 p-0 relative">
+              <div class=" flex flex-row gap-9 items-start justify-start p-0 relative w-full">
                 <!-- Pet Grooming Image -->
-                <div class="basis-0 bg-center bg-cover bg-no-repeat grow min-h-px min-w-px rounded-2xl self-stretch shrink-0" style="background-image: url('/ca2fd8010d46c7dc87c2ab379069af2b4c17ab20.png')"></div>
+                 <!-- <Image alt="Dog grooming" class="basis-0 bg-center bg-cover bg-no-repeat grow  rounded-2xl self-stretch" src={dogGroomingImage} /> -->
+                <div class="basis-0 bg-center bg-cover bg-no-repeat grow  rounded-2xl self-stretch" style="background-image: url('/ca2fd8010d46c7dc87c2ab379069af2b4c17ab20.png')"></div>
                 
                 <!-- Content Column -->
-                <div class="basis-0 box-border content-stretch flex flex-col gap-6 grow items-start justify-start min-h-px min-w-px p-0 relative shrink-0">
+                <div class="basis-0  flex flex-col gap-6 grow items-start justify-start min-h-px min-w-px p-0 relative shrink-0">
                   <div class="font-['Mona_Sans',_sans-serif] font-bold leading-[0] min-w-full not-italic relative shrink-0 text-[#242c39] text-[36px] text-left" style="width: min-content">
                     <p class="block leading-none m-0">Boost Salon Profit & Efficiency</p>
                   </div>
@@ -162,9 +149,9 @@
                   </div>
                   
                   <!-- Feature List -->
-                  <div class="box-border content-stretch flex flex-col gap-2 items-start justify-start p-0 relative shrink-0 w-full">
+                  <div class=" flex flex-col gap-2 items-start justify-start p-0 relative shrink-0 w-full">
                     <!-- Feature 1 -->
-                    <div class="bg-[#ffffff] box-border content-stretch flex flex-row gap-3 items-start justify-start px-4 py-3 relative rounded-2xl shrink-0 w-full">
+                    <div class="bg-[#ffffff]  flex flex-row gap-3 items-start justify-start px-4 py-3 relative rounded-2xl shrink-0 w-full">
                       <div aria-hidden="true" class="absolute border border-[#dadcde] border-solid inset-0 pointer-events-none rounded-2xl"></div>
                       <div class="flex flex-col font-['Font_Awesome_6_Free',_sans-serif] h-5 justify-end leading-[0] not-italic relative shrink-0 text-[#3e9ae6] text-[16px] text-left w-4">
                         <p class="block leading-[normal]">☹️</p>
@@ -175,7 +162,7 @@
                     </div>
                     
                     <!-- Feature 2 -->
-                    <div class="bg-[#ffffff] box-border content-stretch flex flex-row gap-3 items-start justify-start px-4 py-3 relative rounded-2xl shrink-0 w-full">
+                    <div class="bg-[#ffffff]  flex flex-row gap-3 items-start justify-start px-4 py-3 relative rounded-2xl shrink-0 w-full">
                       <div aria-hidden="true" class="absolute border border-[#dadcde] border-solid inset-0 pointer-events-none rounded-2xl"></div>
                       <div class="flex flex-col font-['Font_Awesome_6_Free',_sans-serif] h-5 justify-end leading-[0] not-italic relative shrink-0 text-[#3e9ae6] text-[16px] text-left w-3.5">
                         <p class="block leading-[normal]">📄</p>
@@ -186,7 +173,7 @@
                     </div>
                     
                     <!-- Feature 3 -->
-                    <div class="bg-[#ffffff] box-border content-stretch flex flex-row gap-3 items-start justify-start px-4 py-3 relative rounded-2xl shrink-0 w-full">
+                    <div class="bg-[#ffffff]  flex flex-row gap-3 items-start justify-start px-4 py-3 relative rounded-2xl shrink-0 w-full">
                       <div aria-hidden="true" class="absolute border border-[#dadcde] border-solid inset-0 pointer-events-none rounded-2xl"></div>
                       <div class="flex flex-col font-['Font_Awesome_6_Free',_sans-serif] h-5 justify-end leading-[0] not-italic relative shrink-0 text-[#3e9ae6] text-[16px] text-left w-4">
                         <p class="block leading-[normal]">📊</p>
@@ -198,7 +185,7 @@
                   </div>
                   
                   <!-- Learn More Link -->
-                  <div class="box-border content-stretch flex flex-row gap-[5px] items-start justify-start leading-[0] p-0 relative shrink-0 text-[#3e9ae6] text-[16px] text-left text-nowrap">
+                  <div class=" flex flex-row gap-[5px] items-start justify-start leading-[0] p-0 relative shrink-0 text-[#3e9ae6] text-[16px] text-left text-nowrap">
                     <div class="font-['Onest',_sans-serif] font-bold relative shrink-0">
                       <p class="block leading-[normal] text-nowrap whitespace-pre">Learn more</p>
                     </div>
@@ -207,19 +194,16 @@
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
           </div>
         </div>
-      </div>
     </div>
   </div>
   
   <!-- Bottom CTA Section -->
-  <div class="box-border content-stretch flex flex-row gap-2 items-center justify-start px-8 py-6 relative rounded-2xl shrink-0 w-full">
+  <div class=" flex flex-row gap-2 items-center justify-start px-8 py-6 relative rounded-2xl shrink-0 w-full">
     <div aria-hidden="true" class="absolute border border-[#e3edee] border-solid inset-0 pointer-events-none rounded-2xl"></div>
-    <div class="basis-0 box-border content-stretch flex flex-col gap-2 grow items-start justify-start min-h-px min-w-px p-0 relative shrink-0">
-      <div class="box-border content-stretch flex flex-row gap-2 items-center justify-start p-0 relative shrink-0 w-full">
+    <div class="basis-0  flex flex-col gap-2 grow items-start justify-start min-h-px min-w-px p-0 relative shrink-0">
+      <div class=" flex flex-row gap-2 items-center justify-start p-0 relative shrink-0 w-full">
         <div class="font-['Mona_Sans',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#242c39] text-[0px] text-left text-nowrap">
           <p class="leading-none text-[32px]">
             <span>Curious about </span>
@@ -238,14 +222,14 @@
         </p>
       </div>
     </div>
-    <div class="box-border content-stretch flex flex-col gap-2 items-end justify-start p-0 relative shrink-0">
-      <div class="box-border content-stretch flex flex-row gap-2 items-center justify-start p-0 relative shrink-0">
-        <div class="bg-[#15bac6] box-border content-stretch flex flex-row gap-2 items-start justify-center px-4 py-2 relative rounded-[88px] shrink-0">
+    <div class=" flex flex-col gap-2 items-end justify-start p-0 relative shrink-0">
+      <div class=" flex flex-row gap-2 items-center justify-start p-0 relative shrink-0">
+        <div class="bg-[#15bac6]  flex flex-row gap-2 items-start justify-center px-4 py-2 relative rounded-[88px] shrink-0">
           <div class="font-['Mona_Sans',_sans-serif] font-medium leading-[0] not-italic relative shrink-0 text-[#ffffff] text-[16px] text-left text-nowrap">
             <p class="block leading-[22px] whitespace-pre">Free Trial</p>
           </div>
         </div>
-        <div class="box-border content-stretch flex flex-row gap-2 items-start justify-center px-4 py-2 relative rounded-[88px] shrink-0">
+        <div class=" flex flex-row gap-2 items-start justify-center px-4 py-2 relative rounded-[88px] shrink-0">
           <div aria-hidden="true" class="absolute border border-[#15bac6] border-solid inset-0 pointer-events-none rounded-[88px]"></div>
           <div class="font-['Mona_Sans',_sans-serif] font-medium leading-[0] not-italic relative shrink-0 text-[#15bac6] text-[16px] text-left text-nowrap">
             <p class="block leading-[22px] whitespace-pre">See Our Plans</p>
