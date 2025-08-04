@@ -1,8 +1,11 @@
 ---
-import { Image } from 'astro:assets';
-import headerBg from '@/images/header-bg.png';
+import { Image } from "astro:assets";
+import headerBg from "@/images/header-bg.png";
 ---
 
-<div class="bg-gradient-to-br absolute -z-20 from-hero-primary to-hero-secondary w-full h-[758px]">
-	<Image class="h-full w-full" alt="Header background icons" src={headerBg}/>
+<div
+  style="background: linear-gradient(157deg, #DEFCFF -64.49%, #15BACD 75.93%);"
+  class="absolute -z-20 h-auto w-full"
+>
+  <Image class="h-full w-full" alt="Header background icons" src={headerBg} />
 </div>

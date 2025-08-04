@@ -1,0 +1,118 @@
+---
+import { Image } from "astro:assets";
+
+// Logo and brand assets
+// import savvyLogo from "@/images/959d19284533cb90a133a6972d9bd897213bebfc.svg";
+// import brandMark from "@/images/76b11a402e23e9ff14cd1e1b15e0d7786ac75430.svg";
+// import brandText from "@/images/89bd24ed9ea46a053c1e9e3be2c74d73842fb3d5.svg";
+// import petText from "@/images/2de32ce8d6eebc7df465a7b1a631d544737cde89.svg";
+
+// Footer navigation structure
+const footerSections = [
+  {
+    title: "Product",
+    links: [
+      { name: "Home", href: "/" },
+      { name: "Features", href: "/features" },
+      { name: "About", href: "/about" },
+    ],
+  },
+  {
+    title: "Pricing",
+    links: [
+      { name: "Pricing", href: "/pricing" },
+      { name: "Blog", href: "/blog" },
+      { name: "FAQ", href: "/faq" },
+    ],
+  },
+  {
+    title: "Solutions",
+    links: [
+      { name: "Salon Owners", href: "/salon-owners" },
+      { name: "Multi-Groomer Businesses", href: "/multi-groomer" },
+      { name: "Enterprise", href: "/enterprise" },
+    ],
+  },
+  {
+    title: "For Groomers",
+    links: [
+      { name: "Home/Solo Groomers", href: "/solo-groomers" },
+      { name: "Student/New Groomers", href: "/new-groomers" },
+      { name: "Mobile/In-house/Curbside", href: "/mobile-groomers" },
+    ],
+  },
+];
+
+const socialIcons = [
+  { name: "facebook", href: "https://facebook.com/savvypet" },
+  { name: "instagram", href: "https://instagram.com/savvypet" },
+  { name: "youtube", href: "https://youtube.com/savvypet" },
+  { name: "linkedin", href: "https://linkedin.com/company/savvypet" },
+];
+---
+
+<footer class="bg-[#2d3748] px-[135px] py-12">
+  <div class="mx-auto flex max-w-[1170px] flex-col gap-6">
+    <!-- Main footer content -->
+    <div class="flex h-[138px] items-start justify-between">
+      <!-- Left section - Logo and Social -->
+      <div class="flex w-[364px] flex-col gap-6">
+        <!-- Logo -->
+        <!-- <div class="flex items-end gap-[5px]">
+          <Image src={savvyLogo} alt="Savvy" class="h-[43px] w-[146px]" />
+          <div class="flex h-[50px] items-center gap-[7px]">
+            <Image src={brandMark} alt="" class="h-[39px] w-[51px]" />
+            <Image src={brandText} alt="" class="h-[46px] w-[100px]" />
+          </div>
+          <Image src={petText} alt="Pet" class="h-[46px] w-[73px]" />
+        </div> -->
+
+        <!-- Social Media Icons -->
+        <div class="flex gap-6 text-2xl text-white">
+          {
+            socialIcons.map((social) => (
+              <a
+                href={social.href}
+                class="transition-colors hover:text-[#31c8d3]"
+                aria-label={`Follow us on ${social.name}`}
+              >
+                {social.name === "facebook" && "📘"}
+                {social.name === "instagram" && "📷"}
+                {social.name === "youtube" && "▶️"}
+                {social.name === "linkedin" && "💼"}
+              </a>
+            ))
+          }
+        </div>
+      </div>
+
+      <!-- Right section - Navigation Links -->
+      <div class="flex h-full gap-16">
+        {
+          footerSections.map((section) => (
+            <div class="flex flex-col gap-4">
+              {section.links.map((link, index) => (
+                <a
+                  href={link.href}
+                  class="font-['Mona_Sans:SemiBold',_sans-serif] text-sm leading-[14px] text-white transition-colors hover:text-[#31c8d3]"
+                >
+                  {link.name}
+                </a>
+              ))}
+            </div>
+          ))
+        }
+      </div>
+    </div>
+
+    <!-- Bottom section - Legal -->
+    <div
+      class="flex items-center gap-2 font-['Mona_Sans:Medium',_sans-serif] text-sm leading-[14px] text-[#31c8d3]"
+    >
+      <a href="/terms-privacy" class="transition-colors hover:text-white">
+        Terms & Privacy Policy
+      </a>
+      <span>© Savvy, Inc. 2025</span>
+    </div>
+  </div>
+</footer>

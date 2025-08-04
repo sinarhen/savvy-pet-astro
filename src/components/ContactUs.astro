@@ -1,0 +1,164 @@
+---
+import { Image } from "astro:assets";
+import { Button } from "@/components/ui/button.tsx";
+import { Input } from "@/components/ui/input.tsx";
+
+// Background decoration assets
+// import decorationSvg1 from "@/images/4737cd537277f723e97ff2b59a3b0656e14a9f83.svg";
+// import decorationSvg2 from "@/images/da924015bca79a7c471b0c180f80177bb62780c9.svg";
+// import decorationSvg3 from "@/images/fa4a221b33bd22aae7cf0dedd90c6e062975ea15.svg";
+// import decorationSvg4 from "@/images/773fb7ce4f5b733621b7828cf6166888149a3d1c.svg";
+// import arrowIcon from "@/images/304ad95a0e5695820186f83a2fd5ca94eca89182.svg";
+---
+
+<section
+  class="relative flex min-h-[600px] items-center gap-16 overflow-hidden px-[135px] py-16"
+  style="background: radial-gradient(circle at center, #5ee1ea 0%, #3acdd8 50%, #27c4cf 75%, #15bac6 100%);"
+>
+  <!-- Background decorations -->
+  <!-- <div class="absolute top-[11px] right-[298px] rotate-[184.786deg] opacity-20">
+    <Image src={decorationSvg1} alt="" class="h-[464px] w-[475px]" />
+  </div>
+
+  <div class="absolute top-[230px] left-[489px] rotate-[300deg] opacity-15">
+    <Image src={decorationSvg2} alt="" class="h-[358px] w-[352px]" />
+  </div>
+
+  <div class="absolute top-[-40px] left-[522px] rotate-[225deg] opacity-10">
+    <Image src={decorationSvg3} alt="" class="h-[245px] w-[280px]" />
+  </div>
+
+  <div class="absolute top-[318px] right-[306px] rotate-[30deg] opacity-10">
+    <Image src={decorationSvg4} alt="" class="h-[245px] w-[280px]" />
+  </div> -->
+
+  <!-- Left content -->
+  <div class="z-10 flex flex-1 flex-col gap-8">
+    <div class="flex flex-col gap-4 text-white">
+      <h2
+        class="font-['Mona_Sans:Bold',_sans-serif] text-[64px] leading-none font-bold"
+      >
+        Get started<br />
+        with <span class="text-[#ffe372]">Savvy Pet</span> today
+      </h2>
+      <p
+        class="max-w-lg font-['Mona_Sans:Regular',_sans-serif] text-[18px] leading-[30px]"
+      >
+        Ready to explore Savvy Pet? Talk to a real person, book a call or demo
+        at a time that works for you - our team is here to help.
+      </p>
+    </div>
+
+    <div class="flex gap-4">
+      <Button variant="default" className="flex items-center gap-3">
+        Start Free Trial
+        <!-- <Image alt="" class="h-5 w-5" /> -->
+      </Button>
+      <Button variant="outline"> Watch a Demo </Button>
+    </div>
+  </div>
+
+  <!-- Right form -->
+  <div class="z-10 flex-1 rounded-3xl bg-white p-8 shadow-2xl">
+    <form class="flex flex-col gap-4">
+      <!-- Full Name -->
+      <div class="flex flex-col gap-2">
+        <label
+          class="flex gap-1 font-['Mona_Sans:SemiBold',_sans-serif] text-sm text-[#2d3748]"
+        >
+          Full Name
+          <span class="text-[#ff997e]">*</span>
+        </label>
+        <Input
+          client:load
+          type="text"
+          placeholder="Please enter your full name"
+          className="border-[#c1dfe1] placeholder:text-[#a3bcbe]"
+        />
+      </div>
+
+      <!-- Email -->
+      <div class="flex flex-col gap-2">
+        <div class="flex items-center justify-between">
+          <label
+            class="flex gap-1 font-['Mona_Sans:SemiBold',_sans-serif] text-sm text-[#2d3748]"
+          >
+            Email
+            <span class="text-[#ff997e]">*</span>
+          </label>
+          <span
+            class="font-['Mona_Sans:Medium',_sans-serif] text-xs text-[#ff997e]"
+          >
+            Please enter a valid email address
+          </span>
+        </div>
+        <Input
+          client:load
+          type="email"
+          placeholder="Please enter your email address"
+          className="border-[#c1dfe1] placeholder:text-[#a3bcbe]"
+        />
+      </div>
+
+      <!-- Contact Number -->
+      <div class="flex flex-col gap-2">
+        <label
+          class="font-['Mona_Sans:SemiBold',_sans-serif] text-sm text-[#2d3748]"
+        >
+          Contact/Mobile Number
+        </label>
+        <Input
+          client:load
+          type="tel"
+          placeholder="Please enter your contact/mobile number"
+          className="border-[#c1dfe1] placeholder:text-[#a3bcbe]"
+        />
+      </div>
+
+      <!-- Business Type -->
+      <div class="flex flex-col gap-2">
+        <label
+          class="font-['Mona_Sans:SemiBold',_sans-serif] text-sm text-[#2d3748]"
+        >
+          What is your business?
+        </label>
+        <div class="relative">
+          <select
+            class="h-9 w-full cursor-pointer appearance-none rounded-lg border border-[#c1dfe1] bg-transparent px-3 py-1 text-[#a3bcbe]"
+          >
+            <option value="">Please tell us about your business type</option>
+            <option value="grooming">Pet Grooming</option>
+            <option value="veterinary">Veterinary Clinic</option>
+            <option value="boarding">Pet Boarding</option>
+            <option value="training">Pet Training</option>
+            <option value="other">Other</option>
+          </select>
+          <div
+            class="pointer-events-none absolute top-1/2 right-3 -translate-y-1/2 transform text-[#a3bcbe]"
+          >
+            ▼
+          </div>
+        </div>
+      </div>
+
+      <!-- Message -->
+      <div class="flex flex-col gap-2">
+        <label
+          class="flex gap-1 font-['Mona_Sans:SemiBold',_sans-serif] text-sm text-[#2d3748]"
+        >
+          Message
+          <span class="text-[#ff997e]">*</span>
+        </label>
+        <textarea
+          placeholder="Please tell us what you'd like to chat to us about today"
+          class="h-20 w-full resize-none rounded-lg border border-[#c1dfe1] bg-transparent px-3 py-2 placeholder:text-[#a3bcbe]"
+        ></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <Button client:load variant="primary" type="submit" className="w-fit">
+        Send Message
+      </Button>
+    </form>
+  </div>
+</section>

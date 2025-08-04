@@ -1,145 +1,220 @@
-
 ---
-import Layout from '../layouts/Layout.astro';
-import Hero from '../components/Hero.astro';
-import EverythingInOne from '../components/EverythingInOne.astro';
-import Card from '../components/Card.astro';
-import Testimonials from '../components/Testimonials.astro';
-import { Image } from 'astro:assets';
-import pawsBg from 'public/paws-built-for-groomers.png'
-import { Icon } from 'astro-icon/components';
-import mobileSectionImageSrc from 'public/mobile_section_image.png'
-import useSavvyPetOnAllDevicesImageSrc from 'public/use-savvy-pet-on-all-devices-section-photo.png'
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
+import EverythingInOne from "../components/EverythingInOne.astro";
+import Card from "../components/Card.astro";
+import EmpoweringBusiness from "../components/EmpoweringBusiness.astro";
+import Testimonials from "../components/Testimonials.astro";
+import { Image } from "astro:assets";
+import pawsBg from "public/paws-built-for-groomers.png";
+import { Icon } from "astro-icon/components";
+import mobileSectionImageSrc from "public/mobile_section_image.png";
+import useSavvyPetOnAllDevicesImageSrc from "public/use-savvy-pet-on-all-devices-section-photo.png";
+import ContactUs from "@/components/ContactUs.astro";
+import Footer from "@/components/Footer.astro";
 ---
 
 <Layout title="Savvy Pet - Pet grooming business the Savvy way">
-	<Hero />
-	<EverythingInOne />
-	
-	<!-- About Section -->
-	<section class="flex flex-col gap-16 items-center px-[135px] py-[119px] w-full">
-				<div class="flex flex-col gap-4 w-full">
-					<h1 class="font-family-mona font-bold text-[#242c39] text-[52px] text-center leading-[62px]">
-						One Account. Every Device. Total Control.
-					</h1>
-				</div>
-			
-			<!-- Desktop/Mobile Section -->
-				<Card>
-					<div class="flex flex-col gap-[15px] h-full self-center w-[424px]">
-						<div class="flex justify-center flex-col gap-6 text-left">
-							<h2 class="font-family-mona font-semibold text-[#242c39] text-[48px] leading-none">
-								Use Savvy Pet on Laptop, Tablet or Mobile
-							</h2>
-							<p class="font-family-mona font-normal leading-[30px] text-[#656689] text-[16px]">
-								Savvy Pet works seamlessly across desktop, tablet, and mobile—so you can manage appointments, check your schedule, and stay in control from anywhere.
-							</p>
-						</div>
-					</div>
-					<div class="basis-0 bg-[#ddf0ff] grow h-[460px] min-h-px min-w-px overflow-clip relative rounded-3xl shrink-0">
-						<Image  src={useSavvyPetOnAllDevicesImageSrc} alt="Section image"/>
-					</div>
-				</Card>
-			
-			<!-- Mobile Apps Section -->
-				<Card>
-					<div class="bg-[#e7e7e7] overflow-clip relative rounded-3xl self-stretch shrink-0 w-[543px]">
-						<Image src={mobileSectionImageSrc} alt="Mobile section image"/>
-					</div>
-					<div class="flex flex-col gap-[15px] flex-1">
-						<div class="flex flex-col gap-6 text-left">
-							<h2 class="font-family-mona font-semibold text-[#242c39] text-[48px] leading-none">
-								Savvy Pet Mobile Apps Are Here!
-							</h2>
-							<p class="font-family-mona font-normal leading-[30px] text-[#656689] text-[16px]">
-								We've built two apps—one for groomers, and one for their customers. Groomers can manage their day-to-day with ease, while customers can book, pay, and stay updated—all from their phone.
-							</p>
-							<div class="flex flex-row gap-6 h-[57.185px] items-center">
-								<Icon name="appstore" class="w-auto h-full"/>
-									<img alt="Google Play" class="h-[57.185px] w-[193px]" src="/d3ec3c38d6fda2e589d860c57721e7c25ccecbdd.png" />
-								</div>
-							</div>
-						</div>
-					</div>
-				</Card>
-		
-		<!-- Features Section -->
-		
-		<Card class="bg-[#f1f9ff] relative flex flex-col gap-8 items-center overflow-clip p-0 w-full">
-			<Image src={pawsBg} class="absolute w-full h-auto"  alt="Paws background" /> 
-			<div class="p-12 flex flex-col items-center overflow-clip gap-8">
+  <Hero />
+  <EverythingInOne />
+  <EmpoweringBusiness />
 
-				<div class="flex flex-col gap-4 text-center w-full relative z-10">
-					<h2 class="font-family-mona font-bold text-[#242c39] text-[36px] leading-none">
-						Built for Groomers, Loved by Businesses
-					</h2>
-					<p class="font-family-mona font-normal text-[#656689] text-[16px] leading-[30px]">
-						Everything you need to run smoother, grow faster, and love your work more.
-					</p>
-				</div>
-				<div class="flex flex-row gap-8 w-full relative z-10">
-					<div class="flex-1 bg-[#ffffff] rounded-2xl relative">
-						<div class="flex flex-row gap-5 items-start p-[24px] w-full">
-							<div class="bg-[rgba(59,151,229,0.2)] rounded-[10.182px] size-7 flex items-center justify-center">
-								<Icon name="heart" />
-							</div>
-							<p class="flex-1 font-family-mona font-medium text-[#3b97e5] text-[24px] tracking-[0.24px]">
-								Trusted by Top Grooming Salons
-							</p>
-						</div>
-						<div aria-hidden="true" class="absolute border border-[#ebf6ff] inset-0 pointer-events-none rounded-2xl"></div>
-					</div>
-					<div class="flex-1 bg-[#ffffff] rounded-2xl relative">
-						<div class="flex flex-row gap-5 items-start p-[24px] w-full">
-							<div class="bg-[rgba(59,151,229,0.2)] rounded-[10.182px] size-7 flex items-center justify-center">
-								<Icon name="like"/>
-							</div>
-							<p class="flex-1 font-family-mona font-medium text-[#3b97e5] text-[24px] tracking-[0.24px]">
-								Easy to Use, No Tech Skills Required
-							</p>
-						</div>
-						<div aria-hidden="true" class="absolute border border-[#ebf6ff] inset-0 pointer-events-none rounded-2xl"></div>
-					</div>
-					<div class="flex-1 bg-[#ffffff] rounded-2xl relative">
-						<div class="flex flex-row gap-5 items-start p-[24px] w-full">
-							<div class="bg-[rgba(59,151,229,0.2)] rounded-[10.182px] size-7 flex items-center justify-center">
-								<Icon name="clock" />
-							</div>
-							<p class="flex-1 font-family-mona font-medium text-[#3b97e5] text-[24px] tracking-[0.24px]">
-								Customer Support from Real People
-							</p>
-						</div>
-						<div aria-hidden="true" class="absolute border border-[#ebf6ff] inset-0 pointer-events-none rounded-2xl"></div>
-					</div>
-				</div>
-				<div class="flex flex-row gap-8 items-center justify-center w-full relative z-10">
-					<div class="bg-[#ffffff] rounded-2xl w-[336.667px] relative">
-						<div class="flex flex-row gap-5 items-start p-[24px]">
-							<div class="bg-[rgba(59,151,229,0.2)] rounded-[10.182px] size-7 flex items-center justify-center">
-								<Icon name="calendar"/>
-							</div>
-							<p class="flex-1 font-family-mona font-medium text-[#3b97e5] text-[24px] tracking-[0.24px]">
-								Integrations with GCal, PayPal, etc.
-							</p>
-						</div>
-						<div aria-hidden="true" class="absolute border border-[#ebf6ff] inset-0 pointer-events-none rounded-2xl"></div>
-					</div>
-					<div class="bg-[#ffffff] rounded-2xl w-[336.667px] relative">
-						<div class="flex flex-row gap-5 items-start p-[24px]">
-							<div class="bg-[rgba(59,151,229,0.2)] rounded-[10.182px] size-7 flex items-center justify-center">
-								<Icon name="achievment" />
-							</div>
-							<p class="flex-1 font-family-mona font-medium text-[#3b97e5] text-[24px] tracking-[0.24px]">
-								Contracts & GDPR Compliance
-							</p>
-						</div>
-						<div aria-hidden="true" class="absolute border border-[#ebf6ff] inset-0 pointer-events-none rounded-2xl"></div>
-					</div>
-				</div>
-			</div>
-		</Card>
-	</section>
+  <!-- About Section -->
+  <section
+    class="flex w-full flex-col items-center gap-16 px-[135px] py-[119px]"
+  >
+    <div class="flex w-full flex-col gap-4">
+      <h1
+        class="font-family-mona text-center text-[52px] leading-[62px] font-bold text-[#242c39]"
+      >
+        One Account. Every Device. Total Control.
+      </h1>
+    </div>
 
-	<Testimonials />
-	
+    <!-- Desktop/Mobile Section -->
+    <Card>
+      <div class="flex h-full w-[424px] flex-col gap-[15px] self-center">
+        <div class="flex flex-col justify-center gap-6 text-left">
+          <h2
+            class="font-family-mona text-[48px] leading-none font-semibold text-[#242c39]"
+          >
+            Use Savvy Pet on Laptop, Tablet or Mobile
+          </h2>
+          <p
+            class="font-family-mona text-[16px] leading-[30px] font-normal text-[#656689]"
+          >
+            Savvy Pet works seamlessly across desktop, tablet, and mobile—so you
+            can manage appointments, check your schedule, and stay in control
+            from anywhere.
+          </p>
+        </div>
+      </div>
+      <div
+        class="relative h-[460px] min-h-px min-w-px shrink-0 grow basis-0 overflow-clip rounded-3xl bg-[#ddf0ff]"
+      >
+        <Image src={useSavvyPetOnAllDevicesImageSrc} alt="Section image" />
+      </div>
+    </Card>
+
+    <!-- Mobile Apps Section -->
+    <Card>
+      <div
+        class="relative w-[543px] shrink-0 self-stretch overflow-clip rounded-3xl bg-[#e7e7e7]"
+      >
+        <Image src={mobileSectionImageSrc} alt="Mobile section image" />
+      </div>
+      <div class="flex flex-1 flex-col gap-[15px]">
+        <div class="flex flex-col gap-6 text-left">
+          <h2
+            class="font-family-mona text-[48px] leading-none font-semibold text-[#242c39]"
+          >
+            Savvy Pet Mobile Apps Are Here!
+          </h2>
+          <p
+            class="font-family-mona text-[16px] leading-[30px] font-normal text-[#656689]"
+          >
+            We've built two apps—one for groomers, and one for their customers.
+            Groomers can manage their day-to-day with ease, while customers can
+            book, pay, and stay updated—all from their phone.
+          </p>
+          <div class="flex h-[57.185px] flex-row items-center gap-6">
+            <Icon name="appstore" class="h-full w-auto" />
+            <img
+              alt="Google Play"
+              class="h-[57.185px] w-[193px]"
+              src="/d3ec3c38d6fda2e589d860c57721e7c25ccecbdd.png"
+            />
+          </div>
+        </div>
+      </div>
+    </Card>
+  </section>
+
+  <!-- Features Section -->
+
+  <Card
+    class="relative flex w-full flex-col items-center gap-8 overflow-clip bg-[#f1f9ff] p-0"
+  >
+    <Image src={pawsBg} class="absolute h-auto w-full" alt="Paws background" />
+    <div class="flex flex-col items-center gap-8 overflow-clip p-12">
+      <div class="relative z-10 flex w-full flex-col gap-4 text-center">
+        <h2
+          class="font-family-mona text-[36px] leading-none font-bold text-[#242c39]"
+        >
+          Built for Groomers, Loved by Businesses
+        </h2>
+        <p
+          class="font-family-mona text-[16px] leading-[30px] font-normal text-[#656689]"
+        >
+          Everything you need to run smoother, grow faster, and love your work
+          more.
+        </p>
+      </div>
+      <div class="relative z-10 flex w-full flex-row gap-8">
+        <div class="relative flex-1 rounded-2xl bg-[#ffffff]">
+          <div class="flex w-full flex-row items-start gap-5 p-[24px]">
+            <div
+              class="flex size-7 items-center justify-center rounded-[10.182px] bg-[rgba(59,151,229,0.2)]"
+            >
+              <Icon name="heart" />
+            </div>
+            <p
+              class="font-family-mona flex-1 text-[24px] font-medium tracking-[0.24px] text-[#3b97e5]"
+            >
+              Trusted by Top Grooming Salons
+            </p>
+          </div>
+          <div
+            aria-hidden="true"
+            class="pointer-events-none absolute inset-0 rounded-2xl border border-[#ebf6ff]"
+          >
+          </div>
+        </div>
+        <div class="relative flex-1 rounded-2xl bg-[#ffffff]">
+          <div class="flex w-full flex-row items-start gap-5 p-[24px]">
+            <div
+              class="flex size-7 items-center justify-center rounded-[10.182px] bg-[rgba(59,151,229,0.2)]"
+            >
+              <Icon name="like" />
+            </div>
+            <p
+              class="font-family-mona flex-1 text-[24px] font-medium tracking-[0.24px] text-[#3b97e5]"
+            >
+              Easy to Use, No Tech Skills Required
+            </p>
+          </div>
+          <div
+            aria-hidden="true"
+            class="pointer-events-none absolute inset-0 rounded-2xl border border-[#ebf6ff]"
+          >
+          </div>
+        </div>
+        <div class="relative flex-1 rounded-2xl bg-[#ffffff]">
+          <div class="flex w-full flex-row items-start gap-5 p-[24px]">
+            <div
+              class="flex size-7 items-center justify-center rounded-[10.182px] bg-[rgba(59,151,229,0.2)]"
+            >
+              <Icon name="clock" />
+            </div>
+            <p
+              class="font-family-mona flex-1 text-[24px] font-medium tracking-[0.24px] text-[#3b97e5]"
+            >
+              Customer Support from Real People
+            </p>
+          </div>
+          <div
+            aria-hidden="true"
+            class="pointer-events-none absolute inset-0 rounded-2xl border border-[#ebf6ff]"
+          >
+          </div>
+        </div>
+      </div>
+      <div
+        class="relative z-10 flex w-full flex-row items-center justify-center gap-8"
+      >
+        <div class="relative w-[336.667px] rounded-2xl bg-[#ffffff]">
+          <div class="flex flex-row items-start gap-5 p-[24px]">
+            <div
+              class="flex size-7 items-center justify-center rounded-[10.182px] bg-[rgba(59,151,229,0.2)]"
+            >
+              <Icon name="calendar" />
+            </div>
+            <p
+              class="font-family-mona flex-1 text-[24px] font-medium tracking-[0.24px] text-[#3b97e5]"
+            >
+              Integrations with GCal, PayPal, etc.
+            </p>
+          </div>
+          <div
+            aria-hidden="true"
+            class="pointer-events-none absolute inset-0 rounded-2xl border border-[#ebf6ff]"
+          >
+          </div>
+        </div>
+        <div class="relative w-[336.667px] rounded-2xl bg-[#ffffff]">
+          <div class="flex flex-row items-start gap-5 p-[24px]">
+            <div
+              class="flex size-7 items-center justify-center rounded-[10.182px] bg-[rgba(59,151,229,0.2)]"
+            >
+              <Icon name="achievment" />
+            </div>
+            <p
+              class="font-family-mona flex-1 text-[24px] font-medium tracking-[0.24px] text-[#3b97e5]"
+            >
+              Contracts & GDPR Compliance
+            </p>
+          </div>
+          <div
+            aria-hidden="true"
+            class="pointer-events-none absolute inset-0 rounded-2xl border border-[#ebf6ff]"
+          >
+          </div>
+        </div>
+      </div>
+    </div>
+  </Card>
+
+  <Testimonials />
+  <ContactUs />
+  <Footer />
 </Layout>

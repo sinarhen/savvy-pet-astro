@@ -1,0 +1,84 @@
+---
+import { Image } from "astro:assets";
+
+// Static SVG assets for the cards
+import features1 from "@/images/features-0.svg";
+import features2 from "@/images/features-1.svg";
+import features3 from "@/images/features-2.svg";
+
+// Company logos
+import logo1 from "@/images/logo-1.svg";
+import logo2 from "@/images/logo-2.svg";
+import logo3 from "@/images/logo-3.svg";
+
+const cardImages = [features1, features2, features3];
+const logoImages = [logo1, logo2, logo3, logo2]; // logo2 appears twice in original
+
+// Generate rotation classes for cards to match Figma design
+const getRotationClass = (index: number) => {
+  const rotations = [
+    "rotate-[1.393deg]",
+    "rotate-[358.802deg]",
+    "rotate-[1.393deg]",
+  ];
+  return rotations[index % 3];
+};
+---
+
+<section
+  style="background: linear-gradient(21deg, #F5FFFF 52.89%, #FFF 92.65%);"
+  class="flex flex-col items-center gap-16 px-[135px] py-32"
+>
+  <!-- Header -->
+  <div class="flex flex-col items-center gap-4 text-center">
+    <h2
+      class="font-['Mona_Sans:Bold',_sans-serif] text-[52px] leading-[62px] font-bold text-[#242c39]"
+    >
+      Empowering Your Business
+    </h2>
+    <p
+      class="font-['Mona_Sans:Regular',_sans-serif] text-[16px] leading-[30px] text-[#656689]"
+    >
+      From small startups to thriving enterprises, we help pet professionals
+      grow, streamline, and succeed.
+    </p>
+  </div>
+
+  <!-- Cards -->
+  <div class="flex w-full flex-row gap-8">
+    {
+      cardImages.map((image, index) => (
+        <div class="flex flex-1 justify-center">
+          <Image
+            src={image}
+            alt={`Empowering business card ${index + 1}`}
+            class={`h-auto w-full ${getRotationClass(index)}`}
+            loading="lazy"
+          />
+        </div>
+      ))
+    }
+  </div>
+
+  <!-- Trust section -->
+  <div class="flex w-full flex-col items-center gap-8">
+    <p
+      class="font-['Mona_Sans:Bold',_sans-serif] text-[16px] leading-[30px] font-bold text-black"
+    >
+      Trusted by the best in pet care
+    </p>
+    <!-- Company logos -->
+    <div class="flex flex-row items-center gap-[52px]">
+      {
+        logoImages.map((logo, index) => (
+          <Image
+            src={logo}
+            alt={`Company logo ${index + 1}`}
+            class="h-auto max-h-[31px]"
+            loading="lazy"
+          />
+        ))
+      }
+    </div>
+  </div>
+</section>

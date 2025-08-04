@@ -10,13 +10,15 @@ import icon from 'astro-icon';
 
 // https://astro.build/config
 export default defineConfig({
+  // output: "hybrid",
   vite: {
     plugins: [tailwindcss()]
   },
 
   integrations: [sanity({
-    projectId: "your-project-id",
+    projectId: "b8fb5p5j",
     dataset: "production",
     useCdn: false,
+    studioBasePath: "/studio"
   }), react(), icon()]
 });
