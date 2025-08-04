@@ -4,6 +4,7 @@ import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.astro';
 import EverythingInOne from '../components/EverythingInOne.astro';
 import Card from '../components/Card.astro';
+import Testimonials from '../components/Testimonials.astro';
 import { Image } from 'astro:assets';
 import pawsBg from 'public/paws-built-for-groomers.png'
 import { Icon } from 'astro-icon/components';
@@ -27,10 +28,10 @@ import useSavvyPetOnAllDevicesImageSrc from 'public/use-savvy-pet-on-all-devices
 				<Card>
 					<div class="flex flex-col gap-[15px] h-full self-center w-[424px]">
 						<div class="flex justify-center flex-col gap-6 text-left">
-							<h2 class="font-['Mona_Sans',_sans-serif] font-semibold text-[#242c39] text-[48px] leading-none">
+							<h2 class="font-family-mona font-semibold text-[#242c39] text-[48px] leading-none">
 								Use Savvy Pet on Laptop, Tablet or Mobile
 							</h2>
-							<p class="font-['Mona_Sans',_sans-serif] font-normal leading-[30px] text-[#656689] text-[16px]">
+							<p class="font-family-mona font-normal leading-[30px] text-[#656689] text-[16px]">
 								Savvy Pet works seamlessly across desktop, tablet, and mobile—so you can manage appointments, check your schedule, and stay in control from anywhere.
 							</p>
 						</div>
@@ -47,10 +48,10 @@ import useSavvyPetOnAllDevicesImageSrc from 'public/use-savvy-pet-on-all-devices
 					</div>
 					<div class="flex flex-col gap-[15px] flex-1">
 						<div class="flex flex-col gap-6 text-left">
-							<h2 class="font-['Mona_Sans',_sans-serif] font-semibold text-[#242c39] text-[48px] leading-none">
+							<h2 class="font-family-mona font-semibold text-[#242c39] text-[48px] leading-none">
 								Savvy Pet Mobile Apps Are Here!
 							</h2>
-							<p class="font-['Mona_Sans',_sans-serif] font-normal leading-[30px] text-[#656689] text-[16px]">
+							<p class="font-family-mona font-normal leading-[30px] text-[#656689] text-[16px]">
 								We've built two apps—one for groomers, and one for their customers. Groomers can manage their day-to-day with ease, while customers can book, pay, and stay updated—all from their phone.
 							</p>
 							<div class="flex flex-row gap-6 h-[57.185px] items-center">
@@ -69,10 +70,10 @@ import useSavvyPetOnAllDevicesImageSrc from 'public/use-savvy-pet-on-all-devices
 			<div class="p-12 flex flex-col items-center overflow-clip gap-8">
 
 				<div class="flex flex-col gap-4 text-center w-full relative z-10">
-					<h2 class="font-['Mona_Sans',_sans-serif] font-bold text-[#242c39] text-[36px] leading-none">
+					<h2 class="font-family-mona font-bold text-[#242c39] text-[36px] leading-none">
 						Built for Groomers, Loved by Businesses
 					</h2>
-					<p class="font-['Mona_Sans',_sans-serif] font-normal text-[#656689] text-[16px] leading-[30px]">
+					<p class="font-family-mona font-normal text-[#656689] text-[16px] leading-[30px]">
 						Everything you need to run smoother, grow faster, and love your work more.
 					</p>
 				</div>
@@ -82,7 +83,7 @@ import useSavvyPetOnAllDevicesImageSrc from 'public/use-savvy-pet-on-all-devices
 							<div class="bg-[rgba(59,151,229,0.2)] rounded-[10.182px] size-7 flex items-center justify-center">
 								<Icon name="heart" />
 							</div>
-							<p class="flex-1 font-['Mona_Sans',_sans-serif] font-medium text-[#3b97e5] text-[24px] tracking-[0.24px]">
+							<p class="flex-1 font-family-mona font-medium text-[#3b97e5] text-[24px] tracking-[0.24px]">
 								Trusted by Top Grooming Salons
 							</p>
 						</div>
@@ -93,7 +94,7 @@ import useSavvyPetOnAllDevicesImageSrc from 'public/use-savvy-pet-on-all-devices
 							<div class="bg-[rgba(59,151,229,0.2)] rounded-[10.182px] size-7 flex items-center justify-center">
 								<Icon name="like"/>
 							</div>
-							<p class="flex-1 font-['Mona_Sans',_sans-serif] font-medium text-[#3b97e5] text-[24px] tracking-[0.24px]">
+							<p class="flex-1 font-family-mona font-medium text-[#3b97e5] text-[24px] tracking-[0.24px]">
 								Easy to Use, No Tech Skills Required
 							</p>
 						</div>
@@ -104,7 +105,7 @@ import useSavvyPetOnAllDevicesImageSrc from 'public/use-savvy-pet-on-all-devices
 							<div class="bg-[rgba(59,151,229,0.2)] rounded-[10.182px] size-7 flex items-center justify-center">
 								<Icon name="clock" />
 							</div>
-							<p class="flex-1 font-['Mona_Sans',_sans-serif] font-medium text-[#3b97e5] text-[24px] tracking-[0.24px]">
+							<p class="flex-1 font-family-mona font-medium text-[#3b97e5] text-[24px] tracking-[0.24px]">
 								Customer Support from Real People
 							</p>
 						</div>
@@ -117,7 +118,7 @@ import useSavvyPetOnAllDevicesImageSrc from 'public/use-savvy-pet-on-all-devices
 							<div class="bg-[rgba(59,151,229,0.2)] rounded-[10.182px] size-7 flex items-center justify-center">
 								<Icon name="calendar"/>
 							</div>
-							<p class="flex-1 font-['Mona_Sans',_sans-serif] font-medium text-[#3b97e5] text-[24px] tracking-[0.24px]">
+							<p class="flex-1 font-family-mona font-medium text-[#3b97e5] text-[24px] tracking-[0.24px]">
 								Integrations with GCal, PayPal, etc.
 							</p>
 						</div>
@@ -128,7 +129,7 @@ import useSavvyPetOnAllDevicesImageSrc from 'public/use-savvy-pet-on-all-devices
 							<div class="bg-[rgba(59,151,229,0.2)] rounded-[10.182px] size-7 flex items-center justify-center">
 								<Icon name="achievment" />
 							</div>
-							<p class="flex-1 font-['Mona_Sans',_sans-serif] font-medium text-[#3b97e5] text-[24px] tracking-[0.24px]">
+							<p class="flex-1 font-family-mona font-medium text-[#3b97e5] text-[24px] tracking-[0.24px]">
 								Contracts & GDPR Compliance
 							</p>
 						</div>
@@ -138,5 +139,7 @@ import useSavvyPetOnAllDevicesImageSrc from 'public/use-savvy-pet-on-all-devices
 			</div>
 		</Card>
 	</section>
+
+	<Testimonials />
 	
 </Layout>

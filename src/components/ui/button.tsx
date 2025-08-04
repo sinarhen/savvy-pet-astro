@@ -5,26 +5,23 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "inline-flex items-center cursor-pointer border-0 justify-center gap-2 whitespace-nowrap rounded-[31px] text-[16px] font-bold transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none  aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive",
+  "inline-flex items-center cursor-pointer justify-center gap-3 whitespace-nowrap rounded-[31px] text-[16px] leading-4 transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none font-family-mona",
   {
     variants: {
       variant: {
         default:
-          "bg-white   text-[#15BAC6] font-bold text-base",
-        destructive:
-          "bg-destructive text-white shadow-xs hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
-        outline:
-          "border-[1px] bg-transparent border-white shadow-xs text-white ",
+          "bg-[#ffffff] text-[#15bac6] font-bold hover:bg-[#e1f9fb]",
+        primary:
+          "bg-[#15bac6] text-[#ffffff] font-bold hover:bg-[#0b9faa]",
         secondary:
-          "bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80",
-        ghost:
-          "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
-        link: "text-primary underline-offset-4 hover:underline",
+          "bg-transparent text-[#16bac6] font-semibold border-[1.5px] border-[#16bac6] shadow-[0px_13px_26px_-8px_rgba(158,158,158,0.42)] hover:bg-[rgba(76,209,229,0.1)]",
+        outline:
+          "bg-transparent text-[#ffffff] font-semibold border-[1.5px] border-[#ffffff] shadow-[0px_13px_26px_-8px_rgba(158,158,158,0.42)] hover:bg-[rgba(255,255,255,0.15)]",
       },
       size: {
-        default: "h-[40px] py-3 px-6 has-[>svg]:px-3",
-        sm: "h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5",
-        lg: "h-10 rounded-md px-6 has-[>svg]:px-4",
+        default: "px-6 py-3",
+        sm: "px-4 py-2 text-sm",
+        lg: "px-8 py-4 text-lg",
         icon: "size-9",
       },
     },

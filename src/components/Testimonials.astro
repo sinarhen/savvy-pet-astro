@@ -1,0 +1,60 @@
+---
+const imgScreenshot = "/288fbc86b09c689d6a8b0f9d2c3e1919a64f610e.png";
+const imgQuoteIcon = "/6d84d9a389dc1ca1fd84a84d019b93cf3a234d39.svg";
+const imgDots = "/d2dbb4e9973def99004d59d871069a23974ee04c.svg";
+---
+<!-- background: radial-gradient(66.83% 66.83% at 50% 0%, #FFF 0%, #FFF6F4 100%); -->
+<section style="background: radial-gradient(66.83% 66.83% at 50% 0%, #FFF 0%, #FFF6F4 100%)" class="flex flex-col gap-16 items-center px-[135px] py-32 w-full relative ">
+	<div class="flex flex-col gap-4 items-center text-center w-full max-w-[1200px]">
+		<h2 class="font-family-mona font-bold text-[52px] leading-[62px]">
+			<span class="text-[#242c39]">Trusted by groomers</span>
+			<span class="text-[#ff997e]"> around the world</span>
+		</h2>
+		<div class="font-family-mona font-normal text-[16px] leading-[30px] text-[#656689]">
+			<p class="mb-0">
+				Savvy Pet is trusted by over 1,500 pet professionals across the UK, US, Australia, New Zealand, Europe, and Canada — 
+				<span class="font-bold">and growing fast.</span>
+			</p>
+			<p>Built to scale, easy to use, and loved worldwide.</p>
+		</div>
+	</div>
+
+	<div class="flex flex-col gap-12 items-center w-full max-w-[1170px]">
+		<div class="flex flex-col gap-8 items-center w-full">
+			<div class="flex flex-row gap-[30px] items-center w-full">
+				<div 
+					class="size-60 rounded-full border-4 border-[#ff997e] bg-cover bg-center bg-no-repeat shrink-0"
+					style={`background-image: url('${imgScreenshot}'); background-size: 114.48% 112%; background-position: 55.52% 48.33%;`}
+				>
+				</div>
+				
+				<div class="flex-1 bg-white rounded-3xl border-2 border-[#fff0ed] shadow-[0px_28px_46.1px_-28px_rgba(255,153,126,0.2)]">
+					<div class="flex flex-col gap-9 p-10">
+						<div class="flex flex-col gap-4 w-full">
+							<div class="size-8">
+								<img src={imgQuoteIcon} alt="Quote" class="w-full h-full" />
+							</div>
+							
+							<div class="font-family-mona font-normal text-[16px] leading-[30px] text-[#656689] text-left">
+								<p class="mb-4">
+									1 year after I opened my business, I knew I needed better booking software. I was using a well known software but the upgraded platform I needed was out of my price range. After months of research I decided on Savvy Pet Spa. It had what I needed at a price point I could manage. I am so happy I chose Savvy Pet Spa! The software is very user friendly and the Customer Service has been the absolute best!
+								</p>
+								<p class="mb-0">
+									I can't say enough about how wonderful this company and the software they provide are. I've used them for over 4 yrs and plan to use them until I retire. Thank you Savvy Pet Spa!
+								</p>
+							</div>
+							
+							<div class="font-family-mona font-semibold text-[16px] leading-[30px] text-[#ff997e] text-left">
+								— Gena Thompson CCE - The Captivating Canine Spa LLC, Ohio, USA
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="w-[114px] h-2.5">
+			<img src={imgDots} alt="Pagination dots" class="w-full h-full" />
+		</div>
+	</div>
+</section>

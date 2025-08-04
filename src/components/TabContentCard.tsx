@@ -19,12 +19,12 @@ export default function TabContentCard({ tabData }: TabContentCardProps) {
             {/* Content Column */}
             <div className="flex-1 flex flex-col gap-6 items-start justify-start">
               {/* Title */}
-              <h3 className="font-['Mona_Sans',_sans-serif] font-bold text-[#242c39] text-[36px] leading-none">
+              <h3 className="font-family-mona font-bold text-[#242c39] text-[36px] leading-none">
                 {tabData.title}
               </h3>
               
               {/* Description */}
-              <p className="font-['Mona_Sans',_sans-serif] font-normal text-[#656689] text-[16px] leading-[30px]">
+              <p className="font-family-mona font-normal text-[#656689] text-[16px] leading-[30px]">
                 {tabData.description}
               </p>
               
@@ -38,7 +38,7 @@ export default function TabContentCard({ tabData }: TabContentCardProps) {
                     <div className="flex flex-col h-5 justify-end text-[#3e9ae6] text-[16px] w-4">
                       <span className="block leading-[normal]">{feature.icon}</span>
                     </div>
-                    <div className="flex-1 font-['Mona_Sans',_sans-serif] font-medium text-[#656689] text-[16px]">
+                    <div className="flex-1 font-family-mona font-medium text-[#656689] text-[16px]">
                       <p className="block leading-[normal]">{feature.text}</p>
                     </div>
                   </div>
