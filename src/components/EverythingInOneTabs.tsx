@@ -71,10 +71,8 @@ export default function EverythingInOneTabs() {
       </div>
       
       {/* Main Content Area - Card */}
-      <div className="bg-[#ffffff] box-border content-stretch flex flex-row gap-16 items-center justify-start p-[30px] relative rounded-[48px] shadow-[0px_40px_40.7px_-16.588px_rgba(168,187,188,0.19),0px_12px_24.675px_0px_rgba(173,182,183,0.27)] shrink-0 w-full">
-        <div className="flex-1 h-full flex items-start justify-start">
+      <div className="bg-[#ffffff] box-border content-stretch flex flex-row gap-16 items-center justify-start p-[30px] relative rounded-[48px] shadow-[0px_40px_40.7px_-16.588px_rgba(168,187,188,0.19),0px_12px_24.675px_0px_rgba(173,182,183,0.27)]  w-full">
           {currentTab && <TabContentCard tabData={currentTab} />}
-        </div>
       </div>
     </div>
   );

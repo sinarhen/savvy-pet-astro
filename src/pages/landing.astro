@@ -8,6 +8,7 @@ import { Image } from 'astro:assets';
 import pawsBg from 'public/paws-built-for-groomers.png'
 import { Icon } from 'astro-icon/components';
 import mobileSectionImageSrc from 'public/mobile_section_image.png'
+import useSavvyPetOnAllDevicesImageSrc from 'public/use-savvy-pet-on-all-devices-section-photo.png'
 ---
 
 <Layout title="Savvy Pet - Pet grooming business the Savvy way">
@@ -24,8 +25,8 @@ import mobileSectionImageSrc from 'public/mobile_section_image.png'
 			
 			<!-- Desktop/Mobile Section -->
 				<Card>
-					<div class="flex flex-col gap-[15px] w-[424px]">
-						<div class="flex flex-col gap-6 text-left">
+					<div class="flex flex-col gap-[15px] h-full self-center w-[424px]">
+						<div class="flex justify-center flex-col gap-6 text-left">
 							<h2 class="font-['Mona_Sans',_sans-serif] font-semibold text-[#242c39] text-[48px] leading-none">
 								Use Savvy Pet on Laptop, Tablet or Mobile
 							</h2>
@@ -35,36 +36,7 @@ import mobileSectionImageSrc from 'public/mobile_section_image.png'
 						</div>
 					</div>
 					<div class="basis-0 bg-[#ddf0ff] grow h-[460px] min-h-px min-w-px overflow-clip relative rounded-3xl shrink-0">
-						<div class="absolute contents left-[-63px] top-[47px]">
-							<div class="absolute bottom-[16.96%] left-[-10.19%] right-[1.94%] top-[78.56%]">
-								<div class="absolute bottom-[-19.38%] left-[-0.6%] right-[-0.6%] top-[-19.38%]">
-									<img alt="" class="block max-w-none size-full" loading="lazy" src="/8e56288f0fea687b2c65532b3da4236b1a088d76.svg" />
-								</div>
-							</div>
-							<div class="absolute bottom-[18.92%] contents left-[-0.83%] right-[9.56%] top-[10.22%]">
-								<div class="absolute bottom-[21.3%] left-[4.85%] right-[14.89%] top-[10.22%]">
-									<img alt="" class="block max-w-none size-full" src="/46d8c84cb12df67d228501c92517a47aa3e9729a.svg" />
-								</div>
-								<div class="absolute bottom-[21.54%] left-[5.02%] right-[15.21%] top-[10.7%]">
-									<img alt="" class="block max-w-none size-full" src="/26829aa9b17d8d43354e748db9cfdb4e8a83c055.svg" />
-								</div>
-								<div class="absolute bottom-[22.93%] left-[12.75%] right-[23.9%] top-[73.88%]">
-									<img alt="" class="block max-w-none size-full" loading="lazy" src="/ff87c88bb4a4f8c0b79df859e97374d04b0dbd09.svg" />
-								</div>
-								<div class="absolute bottom-[25.83%] left-[5.02%] right-[15.21%] top-[10.93%]">
-									<img alt="" class="block max-w-none size-full" src="/20043e9a59c608738b4c0f6427cdfc166a468a6c.svg" />
-								</div>
-								<div class="absolute bottom-[26.31%] left-[5.18%] right-[15.37%] top-[11.17%]">
-									<img alt="" class="block max-w-none size-full" src="/a43aa5bfd22f4fd560c7470e42319f63346747bc.svg" />
-								</div>
-							</div>
-							<div class="absolute bottom-[29.13%] left-[7.12%] right-[17.48%] top-[13.7%]">
-								<img alt="" class="block max-w-none size-full" height="263" src="/751a0f58319aff7cdabaf465ce4bdf586167d620.png" width="466" />
-							</div>
-							<div class="absolute bg-[#ffffff] h-[15px] left-[51px] top-[66px] w-10"></div>
-							<div class="absolute bg-center bg-cover bg-no-repeat h-2 left-[47px] top-[69px] w-[48.711px]" style="background-image: url('/2f4ab7003481176c7393468292021926035f370e.png')"></div>
-						</div>
-						<div class="absolute bg-center bg-cover bg-no-repeat h-[262px] left-[347px] top-[178px] w-[243px]" style="background-image: url('/f2c8b2fd06b56505c05c6ff1cfe512fb6eaf950e.png')"></div>
+						<Image  src={useSavvyPetOnAllDevicesImageSrc} alt="Section image"/>
 					</div>
 				</Card>
 			
